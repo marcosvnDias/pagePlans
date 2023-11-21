@@ -1,5 +1,3 @@
-
-
 *{
     padding: 0;
     margin: 0;
@@ -18,22 +16,45 @@
     column-gap: 42px;
 }
 
-div{
+/* div{
+    height: 470px;
+    width: 355px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 42%);
+    position: relative;
+} */
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+}
+
+.subTitulo{
+    font-size: 2.625em;
+    font-weight: 500;
+    color: white;
+  
+}
+
+.cad1, .cad2, .cad3{
     height: 470px;
     width: 355px;
     background-color: rgb(255, 255, 255);
     /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.183); */
     box-shadow: 1px 1px 10px rgb(0 0 0 / 42%);
     position: relative;
-}
-
-.cad1, .cad2, .cad3{
     padding: 50px;
-}
-
-.cad1{
     border-radius: 5px;
 }
+
 
 .cad1 span{
     height: 150px;
@@ -83,7 +104,6 @@ div{
 .cad2{
     height: 490px;
     width: 355px;
-    border-radius: 5px;
 }
 
 .cad2 span{
@@ -132,9 +152,7 @@ div{
     box-shadow: 140px -140px #eaba1c;
 }
 
-.cad3{
-    border-radius: 5px;
-}
+
 
 .cad3 span{
     height: 150px;
@@ -226,20 +244,7 @@ img{
 
 }
 
-h1{
-    font-size: 56px;
-    font-weight: 500;
-    color: white;
 
-
-}
-
-.subTitulo{
-    font-size: 42px;
-    font-weight: 500;
-    color: white;
-  
-}
 
 button{
     height: 48px;
@@ -267,6 +272,39 @@ button:active{
     transition: 400ms;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1185px){
 
+    .subTitulo{
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 1085px){
+
+    .container{
+        row-gap: 65px;
+    }
+
+    .subTitulo{
+        font-size: 2.28em;
+
+    }
+}
+
+@media (max-width: 994px){
+
+    .container{
+        row-gap: 65px;
+    }
+
+    .subTitulo{
+        font-size: 1.79em;
+    }
+}
+
+@media (max-width: 885px){
+
+    .subTitulo{
+        font-size: 1.59em;
+    }
 }
